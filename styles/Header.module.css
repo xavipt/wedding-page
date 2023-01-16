@@ -31,7 +31,7 @@
 .textHeader {
     display: flex;
     font-family: Olivia-Regular;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
@@ -41,7 +41,6 @@
 
 .textSubHeaderBold {
     font-weight: 600;
-    margin-top: 20px;
 }
 
 .textSubHeader {

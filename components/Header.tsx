@@ -38,6 +38,7 @@ const Header = ({ tabSelected, setTabSelected }: HeaderProps) => {
                 height={64}
                 priority
                 color="--gold-color"
+                style={{ marginBottom: 30 }}
               />
             </p>
             <p className={styles.textSubHeaderBold}>
