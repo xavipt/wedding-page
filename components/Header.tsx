@@ -39,10 +39,10 @@ const Header = ({ tabSelected, setTabSelected }: HeaderProps) => {
                 color="--gold-color"
               />
             </p>
-            <p>
+            <p className={styles.textSubHeaderBold}>
               Bem-vindos!!
             </p>
-            <p>
+            <p className={styles.textSubHeader}>
               Estamos ansiosos para partilhar este momento especial na nossa vida com todos vocês e esperamos que possam celebrar comnosco este dia memorável
             </p>
           </div>
