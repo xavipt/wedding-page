@@ -3,23 +3,29 @@
     display: flex;
     flex-direction: column;
     position: static;
+    border-image-source: var(--gold-color);
+    border-image-slice: 1;
+    border-bottom: 2px solid;
 }
 
 .logo {
-    display: inherit;
-    justify-content: inherit;
-    align-items: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
     font-size: 0.85rem;
-    max-width: var(--max-width);
     width: 100%;
     z-index: 2;
+    margin-bottom: 50px;
+    max-width: var(--max-width);
 }
 
 .textHeaderRoot {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
+    max-width: 480px;
+    margin-right: 100px
 }
 
 .textHeader {
@@ -30,15 +36,41 @@
     line-height: 20px;
     letter-spacing: 0em;
     justify-content: center;
+    align-items: center;
 }
 
 .textSubHeaderBold {
     font-weight: 600;
+    margin-top: 20px;
 }
 
 .textSubHeader {
+    margin-top: 8px;
     font-weight: 300;
 }
+
 .backgroundImage {
-    object-fit: cover;
+    position: relative !important;
+    max-width: 1440px;
+    align-self: center;
+}
+
+.bodyCards{
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    max-width: 1000px;
+    background-color: var(--cream-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardHeader {
+
+}
+
+.cardImage {
+
 }

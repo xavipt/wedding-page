@@ -18,14 +18,15 @@ const Header = ({ tabSelected, setTabSelected }: HeaderProps) => {
           className={styles.backgroundImage}
           // sizes="(max-width: 1200px) 100vw, 90vw"
           priority
-          />
+        />
         <div className={styles.logo}>
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             alt="XDLogo"
-            width={350}
-            height={350}
+            width={335}
+            height={300}
             priority
+            style={{ marginLeft: 100 }}
           />
           <div className={styles.textHeaderRoot}>
             <p className={styles.textHeader}>
@@ -47,8 +48,6 @@ const Header = ({ tabSelected, setTabSelected }: HeaderProps) => {
             </p>
           </div>
         </div>
-        <button onClick={() => setTabSelected(Tabs.INFORMACAO)} >Button 1</button>
-        <button onClick={() => setTabSelected(Tabs.RESPOSTA)}>Button 2</button>
       </div>
     </>
   );
