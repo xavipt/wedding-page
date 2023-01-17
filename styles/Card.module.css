@@ -1,0 +1,50 @@
+.bodyCards{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex: 1;
+}
+
+.textHeader {
+    display: flex;
+    font-family: Safira;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.textSubHeaderBold {
+    font-family: Olivia-Regular;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 30px;
+    margin-top: 12px;
+}
+
+.textSubHeader {
+    margin-top: 24px;
+    font-weight: 350;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.card {
+    max-width: 1000px;
+    width: 90%;
+    height: 200px;
+    background-color: var(--cream-color);
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.cardHeader {
+
+}
+
+.cardImage {
+
+}
