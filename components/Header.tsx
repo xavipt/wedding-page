@@ -1,6 +1,7 @@
 import { Tabs } from '../pages/_app';
 import styles from '../styles/Header.module.css'
 import Image from 'next/image'
+import backgroundImage from '../public/background_image_big.svg'
 
 interface HeaderProps {
   tabSelected: Tabs
@@ -11,35 +12,23 @@ const Header = ({ tabSelected, setTabSelected }: HeaderProps) => {
   return (
     <>
       <div className={styles.header}>
-        <Image
-          src="/background_image.svg"
-          alt=""
-          fill
-          className={styles.backgroundImage}
-          // sizes="(max-width: 1200px) 100vw, 90vw"
-          priority
-        />
-        <div className={styles.logo}>
+        <div className={styles.backgroundImageSection}>
           <Image
-            src="/logo.png"
-            alt="XDLogo"
-            width={335}
-            height={300}
+            src={backgroundImage}
+            alt=""
+            className={styles.backgroundImage}
             priority
-            style={{ marginLeft: 100 }}
           />
+        </div>
+        <div className={styles.headerBody}>
+          <div className={styles.logo}>
+            <p className={styles.logoNames}>Débora<br/>+<br/>Xavier</p>
+            <img className={styles.logoImage} src="/logo_frame.svg" alt="XDLogo"/>
+          </div>
           <div className={styles.textHeaderRoot}>
             <p className={styles.textHeader}>
               Vamos Casar
-              <Image
-                src="/rings.svg"
-                alt="rings"
-                width={77}
-                height={64}
-                priority
-                color="--gold-color"
-                style={{ marginBottom: 30 }}
-              />
+              <img className={styles.textHeaderImage} src="/rings.svg" alt="rings"/>
             </p>
             <p className={styles.textSubHeaderBold}>
               Bem-vindos!!

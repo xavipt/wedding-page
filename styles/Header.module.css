@@ -8,35 +8,69 @@
     border-bottom: 2px solid;
 }
 
-.logo {
+.backgroundImageSection {
     display: flex;
-    justify-content: space-between;
-    align-self: center;
-    font-size: 0.85rem;
-    width: 100%;
-    z-index: 2;
-    margin-bottom: 50px;
-    max-width: var(--max-width);
+    justify-content: center;
+}
+
+.backgroundImage {
+    height: 40px;
+}
+
+.headerBody {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 10%;
+}
+
+.logo {
+    position: relative;
+}
+
+.logoImage {
+    width: 230px;
+    height: 200px;
+    margin-left: 12px;
+}
+
+.logoNames {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Safira;
+    font-size: 20px;
 }
 
 .textHeaderRoot {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 22px;
-    max-width: 480px;
-    margin-right: 100px
+    font-size: 16px;
+    max-width: 400px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .textHeader {
     display: flex;
     font-family: Olivia-Regular;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
     justify-content: center;
     align-items: center;
+    margin-left: 40px;
+}
+
+.textHeaderImage {
+    width: 77px;
+    height: 64px;
+    margin-bottom: 30px;
 }
 
 .textSubHeaderBold {
@@ -48,8 +82,41 @@
     font-weight: 300;
 }
 
-.backgroundImage {
-    position: relative !important;
-    max-width: 1440px;
-    align-self: center;
+@media only screen and (max-width: 767px) {
+    .logoImage {
+        width: 115px;
+        height: 100px;
+        margin-left: 8px;
+    }
+    
+    .logoNames {
+        font-size: 12px;
+    }
+
+    .textHeader {
+        display: none;
+    }
+
+    .textHeaderImage {
+        display: none;
+    }
+    
+    .textSubHeaderBold {
+        font-weight: 600;
+    }
+
+    .textHeaderRoot {
+        font-size: 12px;
+        padding: 0 30px;
+        max-width: 500px;
+        margin: 0;
+    }
+
+    .headerBody {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
 }
