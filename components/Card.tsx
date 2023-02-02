@@ -5,9 +5,11 @@ interface CardProps {
   title: string
   subTitle: string
   description: string
+  image: string
+  detailImage: string
 }
 
-const Card = ({ title, subTitle, description }: CardProps) => {
+const Card = ({ title, subTitle, description, image, detailImage }: CardProps) => {
   console.log({ title, subTitle, description });
   return  (
     <div className={styles.card}>
@@ -21,6 +23,12 @@ const Card = ({ title, subTitle, description }: CardProps) => {
         <p className={styles.textSubHeader}>
           {description}
         </p>
+      </div>
+      <div className={styles.cardImage}>
+        <img src={image}/>
+      </div>
+      <div className={styles.detailImage}>
+        <img src={detailImage}/>
       </div>
     </div>
   );
