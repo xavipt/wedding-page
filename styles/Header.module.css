@@ -6,6 +6,7 @@
     border-image-source: var(--gold-color);
     border-image-slice: 1;
     border-bottom: 2px solid;
+    height: auto;
 }
 
 .backgroundImageSection {
@@ -123,7 +124,7 @@
 
 @media only screen and (max-width: 544px) {
     .header {
-        height: 100vh;
+        height: 100%;
     }
 
     .headerBody {
