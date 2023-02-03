@@ -1,7 +1,7 @@
 import { Tabs } from '../pages/_app';
 import styles from '../styles/Header.module.css'
 import Image from 'next/image'
-import backgroundImage from '../public/background_image_big.svg'
+import backgroundImage from '../public/background_image.png'
 
 interface HeaderProps {
   tabSelected: Tabs
@@ -23,12 +23,12 @@ const Header = ({ tabSelected, setTabSelected }: HeaderProps) => {
         <div className={styles.headerBody}>
           <div className={styles.logo}>
             <p className={styles.logoNames}>Débora<br/>+<br/>Xavier</p>
-            <img className={styles.logoImage} src="/logo_frame.svg" alt="XDLogo"/>
+            <img className={styles.logoImage} src="/logo_frame.png" alt="XDLogo"/>
           </div>
           <div className={styles.textHeaderRoot}>
             <p className={styles.textHeader}>
               Vamos Casar
-              <img className={styles.textHeaderImage} src="/rings.svg" alt="rings"/>
+              <img className={styles.textHeaderImage} src="/rings.png" alt="rings"/>
             </p>
             <p className={styles.textSubHeaderBold}>
               Bem-vindos!!
