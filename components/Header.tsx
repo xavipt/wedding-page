@@ -31,10 +31,10 @@ const Header = ({ tabSelected, setTabSelected }: HeaderProps) => {
               <img className={styles.textHeaderImage} src="/rings.png" alt="rings"/>
             </p>
             <p className={styles.textSubHeaderBold}>
-              Bem-vindos!!
+              Bem-vindos!
             </p>
             <p className={styles.textSubHeader}>
-              Estamos ansiosos para partilhar este momento especial na nossa vida com todos vocês e esperamos que possam celebrar comnosco este dia memorável
+              Estamos ansiosos para partilhar este momento especial na nossa vida com todos vocês e esperamos que possam celebrar connosco este dia memorável.
             </p>
           </div>
         </div>

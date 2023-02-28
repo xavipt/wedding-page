@@ -4,13 +4,12 @@ import Image from 'next/image';
 interface CardProps {
   title: string
   subTitle: string
-  description: string
+  description: string | JSX.Element
   image: string
   detailImage: string
 }
 
 const Card = ({ title, subTitle, description, image, detailImage }: CardProps) => {
-  console.log({ title, subTitle, description });
   return  (
     <div className={styles.card}>
       <div className={styles.textHeaderRoot}>
@@ -20,9 +19,9 @@ const Card = ({ title, subTitle, description, image, detailImage }: CardProps) =
         <p className={styles.textSubHeaderBold}>
           {subTitle}
         </p>
-        <p className={styles.textSubHeader}>
+        <div className={styles.textSubHeader}>
           {description}
-        </p>
+        </div>
       </div>
       <div className={styles.cardImage}>
         <img src={image}/>

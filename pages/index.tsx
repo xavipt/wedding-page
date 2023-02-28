@@ -1,5 +1,6 @@
 import Card from '../components/Card';
 import styles from '../styles/Card.module.css';
+import Link from 'next/link';
 
 const CardData = [
   {
@@ -11,13 +12,13 @@ const CardData = [
   {
     title: 'Cerimónia',
     subTitle: 'Igreja de Santa Eunfémia, 12h',
-    description: 'O ponto de encontro vai ser na Igreja de Sta. Eufémia, onde irá ser realizado o casamento às 12h.',
+    description: <p>O ponto de encontro vai ser na <Link className={styles.linkText} target="_blank" href="https://goo.gl/maps/FTQPPsTe7kqGTvh36">Igreja de Sta. Eufémia</Link>, onde irá ser realizado o casamento às 12h.</p>,
     image: '/church.jpg'
   },
   {
     title: 'Festa',
     subTitle: 'Quinta do Ti Lucas',
-    description: 'A festa continua com o almoço na Quinta do Ti Lucas, onde não irá faltar comida, diversão e boa disposição.',
+    description: <p>A festa continua com o almoço na <Link className={styles.linkText} target="_blank" href="https://goo.gl/maps/AdkSnKyfhthwXbza7">Quinta do Ti Lucas</Link>, onde não irá faltar comida, diversão e boa disposição.</p>,
     image: '/party.jpg'
   }
 ];

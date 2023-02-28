@@ -81,6 +81,7 @@
 .textSubHeader {
     margin-top: 8px;
     font-weight: 300;
+    line-height: 20px;
 }
 
 @media only screen and (max-width: 767px) and (min-width: 545px) {
@@ -101,7 +102,7 @@
     .textHeaderImage {
         display: none;
     }
-    
+
     .textSubHeaderBold {
         font-weight: 600;
     }
