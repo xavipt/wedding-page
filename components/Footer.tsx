@@ -14,26 +14,28 @@ const Card = () => {
   const { title, subTitle, description, detailImage, detailImage2 } = FormCard;
 
   return  (
-    <div className={styles.bodyCards}>
-      <div className={styles.card}>
-        <div className={styles.textHeaderRoot}>
-          <p className={styles.textHeader}>
-            {title}
-          </p>
-          <p className={styles.textSubHeaderBold}>
-            {subTitle}
-          </p>
-          <div className={styles.textSubHeader}>
-            {description}
+    <div className={styles.footer}>
+      <div className={styles.bodyCards}>
+        <div className={styles.card}>
+          <div className={styles.textHeaderRoot}>
+            <p className={styles.textHeader}>
+              {title}
+            </p>
+            <p className={styles.textSubHeaderBold}>
+              {subTitle}
+            </p>
+            <div className={styles.textSubHeader}>
+              {description}
+            </div>
           </div>
-        </div>
-        {/*<div className={styles.detailImage}>*/}
-        {/*  <img src={detailImage}/>*/}
-        {/*</div>*/}
+          {/*<div className={styles.detailImage}>*/}
+          {/*  <img src={detailImage}/>*/}
+          {/*</div>*/}
 
-        {/*<div className={styles.detailImage2}>*/}
-        {/*  <img src={detailImage2} />*/}
-        {/*</div>*/}
+          {/*<div className={styles.detailImage2}>*/}
+          {/*  <img src={detailImage2} />*/}
+          {/*</div>*/}
+        </div>
       </div>
     </div>
   );
